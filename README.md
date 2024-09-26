@@ -1,2 +1,2 @@
-# Traffic-Monitring-App
+# Traffic-Monitoring-App
 Traffic management and reporting app
