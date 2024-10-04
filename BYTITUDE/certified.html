@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+
+    
+    <section class="Training-section">
+        <div class="Training-content">
+            <div class="Training-text">
+                <h2>Register</h2>
+                <p style="color: #fff;">Join Bytitude to access our expert cybersecurity training and resources.</p><br>
+
+                <p style="color: #fff;">or sign in to</p>
+                <div class="Training-icons">
+                    <a href="#"><i class="fab fa-facebook" style="color: #fff"></i></a>
+                    <a href="#"><i class="fab fa-twitter" style="color: #fff;"></i></a>
+                    <a href="#"><i class="fab fa-linkedin" style="color: #fff;"></i></a>
+                    <a href="#"><i class="fab fa-google" style="color: #fff;"
+                        ></i></a>
+                </div>
+            </div>
+            <div class="Training-form">
+                <form id="Trainer-form">
+                    <input type="email" placeholder="Email Address" required>
+                    
+                    <select name="preferred_course" required>
+                        <option value="" disabled selected>Select Preferred Course</option>
+                        <option value="comptia_security_plus">CompTIA Security+</option>
+                        <option value="cissp">CISSP</option>
+                        <option value="ceh">Certified Ethical Hacking</option>
+                        <option value="network_security">Network Security</option>
+                    </select>
+                    <input type="password" id="password" placeholder="Password" required>
+                    
+                    <div class="password-requirements">
+                        <p>See Password Requirements <span class="arrow-down">&#9660;</span><span class="arrow-up" style="display:none;">&#9650;</span></p>
+                        <ul class="requirements-list" style="display:none;">
+                            <li>At least 8 character(s)</li>
+                            <li>At least 1 number(s)</li>
+                            <li>At least 1 lowercase letter(s)</li>
+                            <li>At least 1 uppercase letter(s)</li>
+                        </ul><br>
+                    </div>
+
+                    <label><input type="checkbox" required> I want to receive new courses, feature updates, news, and discounts from Bytitude</label>
+                    <label><input type="checkbox" required> By creating an account, you agree to the Terms of Service and Privacy Policy</label><br>
+                    <button type="" class="create-account-btn"><a href="index.html">Create Free Account</a></button>
+                </form>
+                <p class="login-link" style="color: white;">Already have an account? <a href="login.html">Login</a></p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const passwordReq = document.querySelector('.password-requirements p');
+            const reqList = document.querySelector('.requirements-list');
+            const arrowDown = document.querySelector('.arrow-down');
+            const arrowUp = document.querySelector('.arrow-up');
+            const registrationSection = document.querySelector('.registration-section');
+            const registerForm = document.getElementById('register-form');
+        
+            passwordReq.addEventListener('click', function() {
+                reqList.style.display = reqList.style.display === 'none' ? 'block' : 'none';
+                arrowDown.style.display = arrowDown.style.display === 'none' ? 'inline' : 'none';
+                arrowUp.style.display = arrowUp.style.display === 'none' ? 'inline' : 'none';
+            });
+        
+            // Check if form has been submitted before
+            if (!localStorage.getItem('formSubmitted')) {
+                // Show registration section after 10 seconds
+                setTimeout(function() {
+                    registrationSection.style.display = 'flex';
+                }, 5000);
+            }
+        
+            // Close registration section when clicking outside
+            registrationSection.addEventListener('click', function(event) {
+                if (event.target === registrationSection) {
+                    registrationSection.style.display = 'none';
+                }
+            });
+        
+            // Handle form submission
+            registerForm.addEventListener('submit', function(event) {
+                event.preventDefault();
+                // Process form submission here
+                
+                // Set flag in localStorage
+                localStorage.setItem('formSubmitted', 'true');
+                
+                // Close the registration section
+                registrationSection.style.display = 'none';
+            });
+        });
+        
+        
+        </script>
+    
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</body>
+</html>

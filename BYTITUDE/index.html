@@ -1,0 +1,736 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bytitude</title>
+        <!-- <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        /> -->
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="icon" type="image/x-icon" href="images/by.jpeg">
+        <!-- <link rel="stylesheet" href="css/responsive.css" /> -->
+        <!-- <link rel="manifest" href="/site.webmanifest" /> -->
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
+
+        <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      />
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+
+    </head>
+    <body
+        onload='if (window.location.href.substr(window.location.href.length - 6) == "#about") { introAboutLogoTransition(); }'
+        >
+
+
+        <!--navbar-->
+        <nav class="navbar glass" style="height: 70px">
+            <span><a href="#home" style="display: flex; align-items: center">
+                    <h1 class="logo">Bytitude</h1></a></span>
+                <div class="menu-icon">&#9776;</div>
+            <ul class="nav-links">
+                <div class="close-icon">&times;</div>
+                <!-- <li>
+                    <a href="#home" id="pri" class="active cir_border">Home</a>
+                </li> -->
+                <!-- <li><a href="#events" id="sec" class="cir_border">Training</a></li> -->
+                <div class="dropdown">
+                    <a href=""><button class="dropbtn">Training</button></a>
+                    <div class="dropcontent">
+                        <a href="CEH.html"><i class="fas fa-hat-wizard"></i>CEH(CERTIFIED ETHICAL HACKING)</a>
+
+                        <a href="com.html"><i class="fas fa-shield-alt"></i> CompTia Security+</a>
+
+                        <a href="CISSP.html"><i class="fas fa-user-shield"></i>CISSP</a>
+
+                        <a href="isc2.html"><i class="fas fa-certificate"></i>ISC2</a>
+
+                    
+                    </div>
+                    </div>
+                <!-- <li>
+                    <a href="#explore" id="tri" class="cir_border">Courses</a>
+                </li> -->
+
+                <!-- <li>
+                    <a href="#explore" id="tri" class="cir_border">Courses</a>
+                </li> -->
+                <div class="dropdown">
+                    <button class="dropbtn">Courses</button>
+                    <div class="dropcontent">
+                        <a href="#"><i class="fas fa-user-secret"></i> Ethical Hacking and Penetration Testing</a>
+
+                        <a href="#"><i class="fas fa-network-wired"></i>Network Security Fundamentals</a>
+
+                        <a href="#"><i class="fas fa-shield-alt"></i> Application Security</a>
+
+                        <a href="#"><i class="fas fa-cloud-upload-alt"></i>Cloud Security Essentials</a>
+                    
+                    </div>
+                    </div>
+                    
+
+
+                <div class="dropdown">
+                    <button class="dropbtn">Services</button>
+                    <div class="dropcontent">
+                        <a href="#"><i class="fas fa-lock"></i> Application Security <p>Protect your apps with cutting-edge Application Security solutions</p></a>
+                        
+                        <a href="#"><i class="fas fa-network-wired"></i> Network Security<p>Fortify your network with advanced Network Security services.</p></a>
+                        <a href="#"><i class="fas fa-cloud-upload-alt"></i> Deployment of Cloud Security Solutions<p>Seamlessly deploy robust Cloud Security solutions for ultimate protection</p></a>
+                        <a href="#"><i class="fas fa-chart-line"></i> Logging and Monitoring Systems<p>Track and safeguard your systems with efficient Logging and Monitoring tools.</p></a>
+                    
+                    </div>
+                    </div>
+               
+                <li>
+                    <a href="#footer"  class="cir_border">Contact</a>
+                </li>
+                
+
+        <a href="register.html" class="tns" style="margin-right: 10px;">Sign up</a>  
+        <a href="login.html" class="tfs">Login</a>
+
+        <!-- <img src="./images/menu.png" height="30vh"  class="menu-btn" > -->
+        <!-- <div id="menu-bar" class="fas fa-bars"></div> -->
+
+        <!-- <div class="menu-icon" id="menu-icon"><i class="fas fa-bars"></i></div> -->
+            <!-- <img src="./img/menu-btn.png" alt="" class="menu-btn" /> -->
+
+
+            <!-- <div class="overlay"></div>
+            <button type="button" class="mobile-nav-toggle">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-times close-icon" style="display: none;"></i>
+            </button> -->
+        </nav>
+        <!--navbar-->
+
+
+
+        <header id="home">
+            <div class="header-content">
+                <h1>CYBER SPACE</h1>
+                <h2 id="quote">Master cyber defense with our expert training and certification</h2>
+                <div class="line"></div>
+                <a
+                    href="certified.html"
+                    class="ctn">Get Certified</a >
+            </div>
+            
+        </header>
+
+
+
+
+
+
+        <section class="registration-section" style="display: none;">
+            <div class="registration-content">
+                <div class="registration-text">
+                    <h2>Register</h2>
+                    <p style="color: #fff;">Join Bytitude to access our expert cybersecurity training and resources.</p><br>
+
+                    <p style="color: #fff;">or sign in to</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook" style="color: rgb(26, 170, 218);"></i></a>
+                        <a href="#"><i class="fab fa-twitter" style="color: rgb(26, 170, 218);"></i></a>
+                        <a href="#"><i class="fab fa-linkedin" style="color: rgb(26, 170, 218);"></i></a>
+                        <a href="#"><i class="fab fa-google" style="color: #fff;"
+                            ></i></a>
+                    </div>
+                </div>
+                <div class="registration-form">
+                    <form id="register-form">
+                        <input type="email" placeholder="Email Address" required>
+                        <input type="password" id="password" placeholder="Password" required>
+                        <div class="password-requirements">
+                            <p>See Password Requirements <span class="arrow-down">&#9660;</span><span class="arrow-up" style="display:none;">&#9650;</span></p>
+                            <ul class="requirements-list" style="display:none;">
+                                <li>At least 8 character(s)</li>
+                                <li>At least 1 number(s)</li>
+                                <li>At least 1 lowercase letter(s)</li>
+                                <li>At least 1 uppercase letter(s)</li>
+                            </ul><br>
+                        </div>
+                        <label><input type="checkbox" required> I want to receive new courses, feature updates, news, and discounts from Bytitude</label>
+                        <label><input type="checkbox" required> By creating an account, you agree to the Terms of Service and Privacy Policy</label><br>
+                        <button type="submit" class="create-account-btn">Create Free Account</button>
+                    </form>
+                    <p class="login-link" style="color: white;">Already have an account? <a href="login.html">Login</a></p>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="lern">
+            <h2>Why <span>Bytitude</span> Cybersecurity Training?<span></span></h2>
+        </div>
+
+        <section class="services" id="services">
+        <div class="box-container">
+
+            <div class="box">
+                <!-- <i class="fas fa-rocket" style="color: cyan;"></i> -->
+                 <img src="./images/download.png">
+                <h3>Launch your Career</h3>
+                <p style="color: #fff;">Start your cybersecurity training & journey with guided Career Paths that teach the foundational concepts related to real, on-the-job responsibilities.</p>
+                <!-- <ion-icon name="play" aria-hidden="true"></ion-icon> -->
+            </div>
+    
+            <div class="box">
+                <img src="./images/cer.png">
+                <!-- <i class="fas fa-certificate" style="color: cyan;"></i> -->
+                <h3>Earn Certification</h3>
+                <p style="color: #fff;">Ace the exam with Certification Prep Paths developed by industry-leading instructors. Gain insider tips and build confidence with our practice exams.
+
+                </p>
+            </div>
+    
+            <div class="box">
+                <img src="./images/up (1).png">
+                <!-- <i class="fas fa-level-up-alt" style="color: cyan;"></i> -->
+                <h3>Get Upskill</h3>
+                <p style="color: #fff;">Elevate your cybersecurity expertise with hands-on training and globally recognized certifications.Gain the skills needed to secure networks, detect threats, and protect data.</p>
+            </div>
+            
+            <div class="box">
+                <img src="./images/up (2).png">
+                <!-- <i class="fas fa-laptop-code" style="color: cyan;"></i> -->
+                <h3>practice to prove</h3>
+                <p style="color: #fff;">we believe in learning by doing. Our cybersecurity training offers hands-on experience, so you don't just learn—you prove your skills in real-world scenarios. Gain practical expertise and the confidence to tackle any security challenge.</p>
+            </div>  
+            
+            <div class="box">
+                <img src="./images/talent.png">
+                <!-- <i class="fas fa-laptop-code" style="color: cyan;"></i> -->
+                <h3>Retain Top Talent</h3>
+                <p style="color: #fff;">Retain top talent by investing in cutting edge cybersecurity training and certifications. Equip your team with the skills they need to safeguard your organization and stay ahead of cyber threats.</p>
+            </div> 
+
+            <div class="box">
+                <img src="./images/ico.png">
+                <!-- <i class="fas fa-laptop-code" style="color: cyan;"></i> -->
+                <h3>Reduce Business Risk</h3>
+                <p style="color: #fff;">Reduce business risk by empowering your workforce with essential cybersecurity knowledge. Our training and certifications help you stay protected against evolving threats, ensuring your business remains secure.</p>
+            </div> 
+           
+    
+        </div>
+
+
+
+        <div class="lan">
+            Enroll in our training to prepare and pass cybersecurity <br>certification exams like
+        </div>
+   
+    <div id="property-grid">
+        <!-- Property grid view goes here -->
+        <div class="property-item">
+            <a href="com.html"><img src="./images/CompTIA-Security.jpg" alt="Property 1"></a>
+            <!-- <h3>Modern City Apartment</h3> -->
+            <p style="color: #fff;"><b style="text-transform: uppercase; color: white;">CompTIA-Security+</b><br> Kickstart your cybersecurity career with CompTIA Security+!,This foundational certification covers essential security skills, including risk management, threat analysis, and network security.</p>
+            <a href=""><a class="tb" href="com.html">Learn More & Enroll </a></a>
+        </div>
+
+        <div class="property-item">
+            <img src="./images/isc.png" alt="Property 1">
+            <!-- <h3>Modern City Apartment</h3> -->
+            <p style="color: #fff;"><b style="font-size: 20px;">ISC2 Certified in Cybersecurity 
+            </b><br>The ISC2 Certified in Cybersecurity certification provides foundational knowledge in key cybersecurity concepts, covering topics such as information security principles, risk management, access control, and network security, equipping individuals with the skills needed to protect systems.</p>
+            <a href=""><a class="tb" href="">Learn More & Enroll</a></a>
+        </div>
+
+        <div class="property-item">
+            <img src="./images/CISSP.jpeg" alt="Property 1">
+            <!-- <h3>Modern City Apartment</h3> -->
+            <p style="color: #fff;">Advance your cybersecurity career with CISSP! This globally recognized certification dives deep into security architecture, risk management, and network defense. Ideal for professionals aiming for leadership roles in information security</p>
+            <a href="CISSP.html"><a class="tb" href="">Learn More & Enroll</a></a>
+        </div>
+
+        <div class="property-item">
+            <img src="./images/LO.png" alt="Property 1" height="30%">
+            <!-- <h3>Modern City Apartment</h3> -->
+            <p style="color: #fff;">Become a certified hacker with CEH (Certified Ethical Hacker)! Learn how to think like a hacker, find vulnerabilities, and protect systems from cyberattacks. Ideal for those passionate about penetration testing and ethical hacking.</p>
+            <a href=""><a class="tb" href="">Learn More & Enroll</a></a>
+        </div>
+
+        <div class="property-item">
+            <img src="./images/goog.jpeg" alt="" height="30%">
+            <!-- <h3>Modern City Apartment</h3> -->
+            <p style="color: #fff;">Kickstart your career with the Google Cybersecurity Professional certification. Gain in-demand skills in threat analysis, security protocols, and incident response with real-world, hands-on training. </p>
+            <a href=""><a class="tb" href="">Learn More & Enroll</a></a>
+        </div>
+
+        <div class="property-item">
+            <img src="./images/mic.png" alt="" height="30%">
+            <!-- <h3>Modern City Apartment</h3> -->
+            <p style="color: #fff;">Master the skills to become a Microsoft Cybersecurity Analyst. Learn how to protect, detect, and respond to security threats using cutting-edge Microsoft tools and technologies.</p>
+            <a href=""><a class="tb" href="">Learn More & Enroll</a></a>
+        </div>
+
+
+
+
+
+        <div class="enroll">
+       <p style="color: white;">Enroll in our Courses</p>
+    </div>
+    <div id="property-grid">
+        <!-- Property grid view goes here -->
+        <div class="course-item">
+            <a href=""><img src="./images/download.jpeg" alt=""></a>
+            <!-- <h3>Modern City Apartment</h3> -->
+            <p style="color: #fff;"><b style="text-transform: uppercase; color: white;">CISA PREP</b><br>The CISA prep emphasizes auditing, control, and assurance of information systems, covering key areas like IT governance, risk management, and the protection of information.</p>
+            <a href=""><a class="tb" href="">Learn More & Enroll </a></a>
+        </div>
+
+        <div class="course-item">
+            <img src="./images/network.png" alt="">
+            <!-- <h3>Modern City Apartment</h3> -->
+            <p style="color: #fff;"><b style="font-size: 20px;">NETWORK SECURITY</b><br>Network security is crucial in preventing cyberattacks like data breaches, ransomware, and DDoS attacks.</p>
+            <a href=""><a class="tb" href="">Learn More & Enroll</a></a>
+        </div>
+
+
+        <div class="course-item">
+            <img src="./images/kalil.jpeg" alt="">
+            <!-- <h3>Modern City Apartment</h3> -->
+            <p style="color: #fff;"><b style="font-size: 20px;">KALI LINUX</b><br>Master Kali Linux Unlock the top tool for ethical hacking and penetration testing. Learn to conduct security audits, exploit vulnerabilities like a pro.</p>
+            <a href=""><a class="tb" href="">Learn More & Enroll</a></a>
+        </div>
+    </div>
+
+
+
+
+
+                      
+    
+
+       
+        
+        
+
+
+        <section id="sect1">
+          
+            <div class="introduction" >
+                <h2>Reasons we stand out as the best</h2>
+            </div>
+    
+            <div class="big-container" id="learnabt">
+    
+                <div class="small-container">
+                    <p class="ptext"> Trained <b>100+</b> students
+                    </p>
+                </div>
+    
+                <div class="small-container">
+                    <p class="ptext"> Consulted for <b>5+</b> businesses</p>
+                </div>
+    
+                <div class="small-container">
+                    <p class="ptext">100% <b>Success </b>rate.</p>
+                </div>
+    
+            </div>
+        </section>
+        
+
+        <div class="stand"><br><br>
+            Stand out from the crowd and <br>advance your career with Bytitude
+        </div>
+
+        <div class="grid-container">
+            <a href="">
+                <div class="grid-item">
+                    <i class="fas fa-certificate"></i>
+                    Certification Prep
+                </div>
+            </a>
+            <a href="">
+                <div class="grid-item">
+                    <i class="fas fa-road"></i>
+                    Career Path
+                </div>
+            </a>
+            <a href="">
+                <div class="grid-item">
+                    <i class="fas fa-chart-line"></i>
+                    Skills Path
+                </div>
+            </a>
+            <a href="">
+                <div class="grid-item">
+                    <i class="fas fa-shield-alt"></i>
+                    MITRE-ATTACK
+                </div>
+            </a>
+            <a href="">
+                <div class="grid-item">
+                    <i class="fas fa-bug"></i>
+                    CVE Series
+                </div>
+            </a>
+            <a href="">
+                <div class="grid-item">
+                    <i class="fas fa-user-secret"></i>
+                    Threat-Actor-campaign
+                </div>
+            </a>
+        </div>
+        <a href="register.html" class="prep">Start Learning For Free</a>
+
+
+
+
+        <section class="reviews-section">
+            <div class="reviews-content">
+                <div class="reviews-text">
+                    <h2>What Our Students Say</h2>
+                    <p style="font-size: 18px; font-weight: bold; color: #d8d0d0;">Our cybersecurity training has helped countless professionals advance their careers and secure their organizations. Read what our students have to say about their experience with Bytitude.</p>
+                    <div class="testimonial-nav">
+                        <button class="prev-testimonial"><i class="fas fa-arrow-left"></i></button>
+                        <button class="next-testimonial"><i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div class="testimonials-container">
+                    <div class="testimonials-box">
+                        <div class="testimonial">
+                            <p style="font-size: 18px; font-weight: bold;">"Bytitude's CompTIA Security+ course was instrumental in helping me pass the exam on my first try. The hands-on labs were particularly helpful!"</p>
+                            <h4>David Buckley</h4>
+                            <p class="profession">CompTIA Security+ Certified</p>
+                        </div>
+                    </div>
+                    <div class="testimonials-box">
+                        <div class="testimonial">
+                            <p style="font-size: 18px; font-weight: bold;">"The CISSP preparation program at Bytitude gave me the confidence to tackle the exam. The instructors were knowledgeable and supportive throughout."</p>
+                            <h4>Samuel Orland</h4>
+                            <p class="profession">CISSP Certified</p>
+                        </div>
+                    </div>
+                    <div class="testimonials-box">
+                        <div class="testimonial">
+                            <p style="font-size: 18px; font-weight: bold;">"I loved the practical approach of the Ethical Hacking course. It provided real-world scenarios that I now use daily in my penetration testing role."</p>
+                            <h4>Mike Johnson</h4>
+                            <p class="profession">CEH (Certified Ethical Hacker)</p>
+                        </div>
+                    </div>
+                    <div class="testimonials-box">
+                        <div class="testimonial">
+                            <p style="font-size: 18px; font-weight: bold;">"Bytitude's cloud security course was exactly what I needed to transition into a cloud security specialist role. The curriculum was up-to-date and relevant."</p>
+                            <h4>Sarah Wills </h4>
+                            <p class="profession">Cloud Security Certified</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        
+
+
+
+
+
+        
+        <section class="video-section">
+            <div class="video-content">
+                <div class="video-text">
+                    <h2>Cybersecurity Insights</h2>
+                    <p style="color: #fff;">Stay informed about the latest trends and best practices in cybersecurity. Our expert-led videos provide valuable insights to help you protect your digital assets and stay ahead of emerging threats.</p>
+                </div>
+                <div class="video-container">
+                    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/@techwithkazim9180" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/inWWhr5tnEA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+        
+        <section class="news-section">
+            <h2>Latest News</h2>
+
+            <div class="news-slider">
+                <a href="#">
+                <div class="news-container">
+                    
+                    <div class="news-item">
+                        <img src="./images/kool.jpg" alt="News 1">
+                        <div class="news-content">
+                            <p class="news-date">July 26, 2024</p>
+                            <h3>New Cybersecurity Threats Emerging</h3>
+                            <p style="color: #beb6b6;">Recent study shows an increase in sophisticated cyber attacks...</p>
+                            <a href="#" class="read-more">READ MORE &gt;</a>
+                        </div>
+                    </div>
+                    </a>
+
+
+                    <div class="news-item">
+                        <a href="#">
+                        <img src="./images/l.jpg" alt="News 2">
+                        <div class="news-content">
+                            <p class="news-date">August 3, 2024</p>
+                            <h3>Bytitude Launches Advanced AI Security Course</h3>
+                            <p  style="color: #beb6b6;">Our new course covers the latest in AI-powered cybersecurity...</p>
+                            <a href="#" class="read-more">READ MORE &gt;</a>
+                        </div>
+                    </a>
+                    </div>
+
+                    <div class="news-item">
+                        <a href="#">
+                        <img src="./images/loe.jpg" alt="News 3">
+                        <div class="news-content">
+                            <p class="news-date">August 15, 2024</p>
+                            <h3>Global Cybersecurity Summit Announced</h3>
+                            <p  style="color: #beb6b6;">Industry leaders to gather for annual cybersecurity conference...</p>
+                            <a href="#" class="read-more">READ MORE &gt;</a>
+                        </div>
+                    </a>
+                    </div>
+
+                    <div class="news-item">
+                        <a href="#">
+                        <img src="./images/micr.jpeg" alt="News 4">
+                        <div class="news-content">
+                            <p class="news-date">September 1, 2024</p>
+                            <h3>New Ransomware Strain Targets Healthcare</h3>
+                            <p  style="color: #beb6b6;">Cybersecurity experts warn of a new ransomware variant...</p>
+                            <a href="#" class="read-more">READ MORE &gt;</a>
+                        </div>
+                    </a>
+                    </div>
+
+                    <div class="news-item">
+                        <a href="#">
+                        <img src="./images/micro.jpg" alt="News 5">
+                        <div class="news-content">
+                            <p class="news-date">September 10, 2024</p>
+                            <h3>Bytitude Partners with Tech Giant</h3>
+                            <p  style="color: #beb6b6;">New partnership aims to enhance cybersecurity training...</p>
+                            <a href="#" class="read-more">READ MORE &gt;</a>
+                        </div>
+                    </a>
+                    </div>
+
+
+                    <div class="news-item">
+                        <a href="#">
+                        <img src="./images/LO.png" alt="News 6">
+                        <div class="news-content">
+                            <p class="news-date">September 22, 2024</p>
+                            <h3>Government Releases New Cybersecurity Guidelines</h3>
+                            <p  style="color: #beb6b6;">Federal agencies update cybersecurity best practices...</p>
+                            <a href="#" class="read-more">READ MORE &gt;</a>
+                        </div>
+                    </a>
+                    </div>
+
+                    <div class="news-item">
+                        <a href="#">
+                        <img src="./images/loe.jpg" alt="News 7">
+                        <div class="news-content">
+                            <p class="news-date">October 5, 2024</p>
+                            <h3>Bytitude Scholarship Program Launched</h3>
+                            <p  style="color: #beb6b6;">New initiative aims to support aspiring cybersecurity professionals...</p>
+                            <a href="#" class="read-more">READ MORE &gt;</a>
+                        </div>
+                    </div>
+                </a>
+                </div>
+            </div>
+            <div class="slider-nav">
+                <button class="prev-slide">&lt;</button>
+                <button class="next-slide">&gt;</button>
+            </div>
+        </section>
+
+        
+
+
+
+        <section class="trusted-organizations">
+            <h2>Trusted by leading organizations</h2>
+            <div class="organization-slider">
+                <div class="slider-container">
+                    <img src="images/micoso.png" alt="Organization 5">
+                    <img src="images/cisa.png" alt="Organization 2">
+                    <img src="images/loe.jpg" alt="Organization 3">
+                    <img src="images/google.png" alt="Organization 1">
+                    <img src="images/l.jpg" alt="Organization 4">
+                    <img src="images/LO.png" alt="Organization 5">
+                    <img src="images/network.png" alt="Organization 5">
+                    <img src="images/CISSP.jpeg" alt="Organization 5">
+                    <img src="images/CompTIA-Security.jpg" alt="Organization 5">
+     
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="newsletter">
+            <div class="newsletter-content">
+              <div class="newsletter-icon">
+                <i class="fas fa-envelope-open-text"></i>
+              </div>
+              <h2>Subscribe to Our Newsletter</h2>
+              <p>Stay ahead in the cyber world with our expert insights!</p>
+              <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">
+                  <span>Subscribe</span>
+                  <i class="fas fa-arrow-right"></i>
+                </button>
+              </form>
+            </div>
+            <div class="newsletter-decoration left"></div>
+            <div class="newsletter-decoration right"></div>
+          </section>
+          
+
+          <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                if (localStorage.getItem('userLoggedIn') === 'true') {
+                    const signUpButton = document.querySelector('.nav-button[href="register.html"]');
+                    const loginButton = document.querySelector('.nav-button[href="login.html"]');
+                    
+                    if (signUpButton) signUpButton.style.display = 'none';
+                    if (loginButton) loginButton.style.display = 'none';
+                }
+            });
+            </script>
+            
+        
+        
+        
+
+
+
+
+
+
+
+
+          
+
+
+
+
+
+<footer class="footer" id="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Bytitude</h3>
+            <p>Master cyber defense with our expert training and certification</p>
+        </div>
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>Email: info@bytitude.com</p>
+            <p>Phone: (+234) 08012345678</p>
+        </div>
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook" style="color: #fff;"></i></a>
+                <a href="#"><i class="fab fa-twitter" style="color: #fff;"></i></a>
+                <a href="#"><i class="fab fa-linkedin" style="color: #fff;"></i></a>
+                <a href="#"><i class="fab fa-instagram" style="color: #fff;"></i></a>
+                <a href="#"><i class="fab fa-youtube" style="color: #fff;"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Bytitude. All rights reserved.</p>
+    </div>
+
+    
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- <script>
+            const menuBtn = document.querySelector(".menu-btn");
+            const navlinks = document.querySelector(".nav-links");
+
+            menuBtn.addEventListener("click", () => {
+                navlinks.classList.toggle("mobile-menu");
+            });
+        </script> -->
+
+
+
+
+
+        
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
